@@ -11,7 +11,7 @@ pipeline {
             sh 'mvn clean package'
          }
       }
-      
+     
       stage('Development Tests') {
          when {
             beforeAgent true
@@ -30,6 +30,5 @@ pipeline {
             echo "Run the master tests!"
          }
       }
-
    }
 }
